@@ -1,9 +1,10 @@
-version: '3.0'
+version: '3.1'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
 - buy_pizza
+- no_chatbot
 - greet
 - inform
 - goodbye
@@ -37,7 +38,7 @@ forms:
       - pizza_type
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hi my name is Phil and I am your virtual assistant of the Maharajah Place in Istanbul. I could assist you to find a hotelroom through this conversation within 2-4 minutes. Do you want to proceed with the virtual roombooking process(respond=chatbot), or do you want to get in touch with any of my receptionst colleagues?(respond=receptionst)
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -49,6 +50,8 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_no_chatbot:
+    - text: To get in touch with the reception please dial (+90 212 51 44 41 7).
   utter_submit:
   - text: I will now order a pizza for you!
   utter_pizza_slots:

@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 nlu:
 - intent: greet
   examples: |
@@ -96,11 +96,34 @@ nlu:
     - am I talking to a human?
 - intent: buy_pizza
   examples: |
-    - i'd like to buy a pizza
-    - i want a pizza
-    - can i buy a pizza
-    - I'm interested in a savory round flattened bread of Italian origin
-    - i want to buy a pizza
+    - chatbot is fine
+    - I won't to proceed with the chatbot
+    - the virtual assistant is ok
+    - please proceed with the virtual assistant
+    - I do not need the support of a real person
+    - virtual assistant is fine
+    - chat conversation for the roombooking is fine
+    - I will try this chatbot service
+    - I don't want to talk to a human receptionist
+    - Chatbot sounds good. I will try this one
+    - Let's proceed with the chatbot
+
+- intent: no_chatbot
+  examples: |
+    - chatbot is not fine
+    - chatbot is not ok.
+    - I don't won't to proceed with the chatbot
+    - the virtual assistant is not ok
+    - please forward me to a real human
+    - please forward me to the reception !
+    - I want to speak with a real person
+    - I do need the support of a real person
+    - virtual assistant is not fine
+    - chat conversation for the roombooking is not fine
+    - I don't won't to try this chatbot service
+    - I want to talk to a human receptionist
+    - Let's proceed with the telephoneconnection to the reception of the hotel 
+
 - intent: inform
   examples: |
     - i'd like a [large](pizza_size) pizza
