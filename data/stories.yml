@@ -29,6 +29,14 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: No chatbot conversation
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: no_chatbot
+    - action: utter_no_chatbot
+    - action: utter_goodbye
+
 - story: interactive_story_1
   steps:
   - intent: greet
